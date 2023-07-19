@@ -8,7 +8,7 @@ image:
   repository: benvaljean/myip
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: latest
+  tag: 0.2.0
 
 imagePullSecrets: []
 nameOverride: ""
@@ -47,7 +47,7 @@ ingress:
     kubernetes.io/ingress.class: nginx
     kubernetes.io/tls-acme: "true"
   hosts:
-    - host: myip.sys.goodacre.name
+    - host: myip.kube1.goodacre.name
       paths:
         - path: /
           pathType: ImplementationSpecific
